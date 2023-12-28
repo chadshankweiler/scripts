@@ -1,7 +1,7 @@
 #!/bin/bash
 
-languages=$(echo "golang c cpp rust typescript javascript" | tr " " "\n")
-core_utils=$(echo "find awk sed xargs" | tr " " "\n")
+languages=$(echo "golang c cpp rust typescript javascript bash" | tr " " "\n")
+core_utils=$(echo "find awk sed xargs git-worktree" | tr " " "\n")
 selected=$(echo -e "$languages\n$core_utils" | fzf)
 
 read -p "GIMME UR QUERY MONEY: " query
